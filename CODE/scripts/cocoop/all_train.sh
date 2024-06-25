@@ -8,7 +8,6 @@ DATASET=$1
 SEED=$2
 
 CFG=vit_b16_c16_ep10_batch1
-# CFG=vit_b16_ep50_ctxv1  # uncomment this when TRAINER=CoOp and DATASET=imagenet
 SHOTS=16
 
 
