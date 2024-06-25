@@ -161,10 +161,10 @@ Additionally, you can modify the `INTENSITY` to control the random range of augm
 ## Additional Notes:
 
 1. **Number of Experiments**: The model is sensitive due to two reasons: 
-   - the random initialization in few-shot learning,
-   - the random initialization of all augmentation operations (within a certain range). 
+   - the random initialization in few-shot learning (e.g., training samples, context...);
+   - the random initialization of all augmentation operations (within a certain range);
    - Meta-Net needs to learn the mapping pattern from the image branch to the text branch that adapts to multiple augmentations in fewer epochs (This pattern will become increasingly apparent as the number of augmentation operations increases).
 
    Therefore, it is necessary to experiment with multiple random seeds (or maybe more epochs).
 
-2. **Dataset Bug**: There is an issue with path handling for the DTD dataset in the Linux environment. Hence, we recommend running it in a Windows environment.
+2. **Dataset Bug**: There is an issue with path handling for the DTD dataset in the Linux environment. Hence, we recommend running it in a Windows environment or uncomment the `line 130` in `CODE/datasets/oxford_pets`.
