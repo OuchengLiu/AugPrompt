@@ -167,4 +167,4 @@ Additionally, you can modify the `INTENSITY` to control the random range of augm
 
    Therefore, it is necessary to experiment with multiple random seeds (or maybe more epochs).
 
-2. **Dataset Bug**: There is an issue with path handling for the DTD dataset in the Linux environment. Hence, we recommend running it in a Windows environment or uncomment the `line 130` in `CODE/datasets/oxford_pets`.
+2. **Dataset Bug**: There is an issue with path handling for the DTD dataset in the Linux environment. Hence, we recommend running it in a Windows environment or uncomment the `line 130` in `CODE/datasets/oxford_pets.py`.
