@@ -127,6 +127,7 @@ class OxfordPets(DatasetBase):
                 # Modify for Multi_View
                 if impath.startswith("\\"):  # for dtd, path=\..., it will make impath=C:\..jpg
                     impath = impath[1:]  # thus, remove the leading backslash
+                # impath = impath.replace('\\', '\')  # uncomment if in Linux
                 impath = os.path.join(path_prefix, impath)
                 item = Datum(impath=impath, label=int(label), classname=classname)
                 out.append(item)
