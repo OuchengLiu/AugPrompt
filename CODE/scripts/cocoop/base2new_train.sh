@@ -10,7 +10,6 @@ SEED=$2
 CFG=vit_b16_c16_ep10_batch1
 SHOTS=16
 
-
 DIR=output/base2new/train_base/${DATASET}/shots_${SHOTS}/${TRAINER}/${CFG}/seed${SEED}
 if [ -d "$DIR" ]; then
     echo "Oops! The results exist at ${DIR} (so skip this job)"
